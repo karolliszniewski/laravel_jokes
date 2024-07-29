@@ -6,5 +6,7 @@ use App\Http\Controllers\JokeController;
 
 Auth::routes();
 
-// Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('homepage');
-Route::get('/', [App\Http\Controllers\JokeController::class, 'index'])->name('jokes.index');
+Route::get('/', [JokeController::class, 'index'])->name('jokes.index');
+Route::post('/jokes', [JokeController::class, 'store'])->name('jokes.store');
+Route::put('/jokes/{id}', [JokeController::class, 'update'])->name('jokes.update');
+Route::delete('/jokes/{id}', [JokeController::class, 'destroy'])->name('jokes.destroy');

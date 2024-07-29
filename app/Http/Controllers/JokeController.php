@@ -1,5 +1,7 @@
 <?php
 
+// app/Http/Controllers/JokeController.php
+
 namespace App\Http\Controllers;
 
 use App\Models\Joke;
@@ -7,20 +9,24 @@ use Illuminate\Http\Request;
 
 class JokeController extends Controller
 {
-
     public function index()
     {
         $jokes = Joke::all();
         return view('jokes.index', compact('jokes'));
     }
 
-
-    public function edit($id)
+    public function store(Request $request)
     {
-        $joke = Joke::findOrFail($id);
-        return view('jokes.edit', compact('joke'));
-    }
+        $request->validate([
+            'joke' => 'required|string|max:255',
+        ]);
 
+        Joke::create([
+            'joke' => $request->input('joke'),
+        ]);
+
+        return redirect()->route('jokes.index')->with('success', 'Joke added successfully!');
+    }
 
     public function update(Request $request, $id)
     {
@@ -34,5 +40,13 @@ class JokeController extends Controller
         ]);
 
         return redirect()->route('jokes.index')->with('success', 'Joke updated successfully.');
+    }
+
+    public function destroy($id)
+    {
+        $joke = Joke::findOrFail($id);
+        $joke->delete();
+
+        return redirect()->route('jokes.index')->with('success', 'Joke deleted successfully.');
     }
 }
