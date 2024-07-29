@@ -24,30 +24,55 @@ This project involves creating a Laravel application to interact with an API, st
 ## Setup Instructions
 
 1. **Clone the Repository:**
+
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/karolliszniewski/laravel_jokes.git
     ```
+
 2. **Navigate to the Project Directory:**
+
     ```bash
-    cd your-repository
+    cd laravel_jokes
     ```
+
 3. **Install Dependencies:**
+
     ```bash
     composer install
     npm install
     ```
+
 4. **Set Up Your .env File:**
+
     ```bash
     cp .env.example .env
     ```
+
 5. **Generate an Application Key:**
+
     ```bash
     php artisan key:generate
     ```
+
 6. **Run Migrations:**
+
     ```bash
     php artisan migrate
     ```
+
+7. **Seed the Database (Optional):**
+   If the project includes seeders and you want to populate the database with sample data, run:
+
+    ```bash
+    php artisan db:seed
+    ```
+
+8. **Run the Development Server:**
+   To start the local development server, use:
+    ```bash
+    php artisan serve
+    ```
+    Then, open your browser and go to `http://localhost:8000` to view the application.
 
 ## Project Progress
 
