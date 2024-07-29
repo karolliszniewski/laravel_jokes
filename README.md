@@ -24,9 +24,29 @@ This project involves creating a Laravel application to interact with an API, st
 ## Setup Instructions
 
 1. **Clone the Repository:**
-
     ```bash
     git clone <repository-url>
+    ```
+2. **Navigate to the Project Directory:**
+    ```bash
+    cd your-repository
+    ```
+3. **Install Dependencies:**
+    ```bash
+    composer install
+    npm install
+    ```
+4. **Set Up Your .env File:**
+    ```bash
+    cp .env.example .env
+    ```
+5. **Generate an Application Key:**
+    ```bash
+    php artisan key:generate
+    ```
+6. **Run Migrations:**
+    ```bash
+    php artisan migrate
     ```
 
 ## Project Progress
@@ -40,3 +60,16 @@ This project involves creating a Laravel application to interact with an API, st
 
 -   **Feature**: Implemented Laravel basic authentication with Bootstrap CSS and created a route to display jokes.
     ![Basic Authentication](https://github.com/user-attachments/assets/72312e18-8e75-47be-8869-241ade483e9c)
+
+## Features
+
+-   **CRUD Operations**: Implemented using Laravel's conventional methods:
+    -   `index`: Display a listing of the resource.
+    -   `store`: Store a newly created resource in storage.
+    -   `update`: Update the specified resource in storage.
+    -   `destroy`: Remove the specified resource from storage.
+-   **Bootstrap Integration**: Utilized Bootstrap buttons and forms for a responsive and modern graphical user interface (GUI).
+
+## Screenshots
+
+![image](https://github.com/user-attachments/assets/83492f87-30ed-4c6e-b9d1-e6830d9b29de)
