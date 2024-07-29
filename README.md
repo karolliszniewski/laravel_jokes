@@ -2,7 +2,9 @@
 
 ## Overview
 
-This project involves creating a Laravel application to interact with an API, store the retrieved data, and display it on the frontend. The primary focus is to enable data manipulation with authentication.
+This project entails developing a Laravel application that interfaces with an external API, retrieves and stores data, and presents it on the frontend. The main objective is to facilitate data manipulation with robust authentication mechanisms.
+
+Live Version: [Laravel Jokes Application](https://jokes.creativevault.ovh/laravel_jokes/public/)
 
 ## API Source
 
