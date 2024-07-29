@@ -18,9 +18,10 @@ class JokeController extends Controller
 
     public function index()
     {
-        $jokes = Joke::paginate(10);
+        $jokes = Joke::orderBy('id', 'desc')->paginate(10);
         return view('jokes.index', compact('jokes'));
     }
+
 
     public function store(Request $request)
     {
