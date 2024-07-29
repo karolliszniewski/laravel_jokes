@@ -18,8 +18,7 @@ This project involves creating a Laravel application to interact with an API, st
 
 ## Bonus Points
 
--   Add any additional features that showcase your expertise in PHP and Laravel.
--   Consider including advanced functionalities or optimizations to enhance the project.
+-   Add any additional features you think would be good than demonstrate your PHP / Laravel knowledge
 
 ## Setup Instructions
 
