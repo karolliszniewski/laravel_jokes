@@ -78,5 +78,7 @@
         @endforeach
     </tbody>
 </table>
-
+<div style="display:flex;width:100%;height:3rem;justify-content:center;align-items:center">
+{{$jokes->links()}}
+</div>
 @endsection
