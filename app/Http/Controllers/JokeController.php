@@ -9,6 +9,13 @@ use Illuminate\Http\Request;
 
 class JokeController extends Controller
 {
+
+    public function __construct()
+    {
+        // Allow unauthenticated users to view the list of jokes, but require authentication for all other actions
+        $this->middleware('auth')->except('index');
+    }
+
     public function index()
     {
         $jokes = Joke::all();

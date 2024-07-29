@@ -73,3 +73,13 @@ This project involves creating a Laravel application to interact with an API, st
 ## Screenshots
 
 ![image](https://github.com/user-attachments/assets/83492f87-30ed-4c6e-b9d1-e6830d9b29de)
+
+## Homepage Views
+
+### Logged In
+
+![Homepage - Logged In](https://github.com/user-attachments/assets/6518fbbd-ee11-4027-ad81-8c42dabbe2c7)
+
+### Logged Out
+
+![Homepage - Logged Out](https://github.com/user-attachments/assets/706f985b-7dc2-4f00-bbb6-319eb986e635)
