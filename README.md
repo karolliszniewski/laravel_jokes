@@ -28,3 +28,11 @@ This project involves creating a Laravel application to interact with an API, st
     ```bash
     git clone <repository-url>
     ```
+
+## Project Progress
+
+### Fetch Jokes
+
+-   **Feature**: Use the `artisan fetch` feature to retrieve jokes from the API and save them to the database.
+
+![Image](https://github.com/user-attachments/assets/1136f25e-5f9b-4d67-8351-07c8bdf34727)
