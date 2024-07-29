@@ -1,7 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\JokeController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Auth::routes();
+
+// Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('homepage');
+Route::get('/', [App\Http\Controllers\JokeController::class, 'index'])->name('jokes.index');
