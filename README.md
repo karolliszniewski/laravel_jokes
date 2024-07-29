@@ -60,11 +60,11 @@ This project involves creating a Laravel application to interact with an API, st
     php artisan migrate
     ```
 
-7. **Seed the Database (Optional):**
-   If the project includes seeders and you want to populate the database with sample data, run:
+7. **Fetch and Populate Data:**
+   To fetch and populate the jokes data, run:
 
     ```bash
-    php artisan db:seed
+    php artisan jokes:fetch
     ```
 
 8. **Run the Development Server:**
